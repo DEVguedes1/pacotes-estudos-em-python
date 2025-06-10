@@ -1,4 +1,4 @@
-from utilitarios import temp
+from utilitarios import conversores
 
 while True:
     try:
@@ -13,10 +13,10 @@ while True:
     match entrada:
         case 1:
             temperatura=float(input("digite a temperatura que você quer converter:"))
-            temp.cels_for_faren(temperatura)
+            conversores.cels_for_faren(temperatura)
         case 2:
             temperatura=float(input("digite a temperatura que você quer converter:"))
-            temp.faren_for_cels(temperatura)
+            conversores.faren_for_cels(temperatura)
         case 3:
             break
         case _:
